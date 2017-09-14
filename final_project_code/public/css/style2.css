@@ -1,0 +1,201 @@
+body{
+background-color: white;
+top: 0px;
+bottom: 0px;
+right: 0px;
+left: 0px;
+font-family: Arial;
+margin: auto;
+height: 100%;
+width: 100%;
+}
+
+#center1{
+	text-align:center ;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+
+
+input[type=text], input[type=password], input[type=date] {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 10px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #97192E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 12px;
+    font-size:18px;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity:white;
+	}
+
+#wrapper{
+border: 1px solid #97192E;
+width: 1000px;
+height: 600px;
+margin: 0px auto;
+}
+
+#wrapper #child1{
+	border: 1px solid #97192E;
+width: 750px;
+height: 600px;
+float:left;
+}
+	
+#wrapper #child2{
+border: 1px solid #97192E;
+width: 244px;
+height: 600px;
+float:right;
+}	
+	
+
+	#wrapper input[type=date], select {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 10px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#ul_1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color : white;
+}
+
+li {
+    float: center;
+}
+
+#a_1 {
+    display: block;
+    color: #97192E;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#text_1 {
+font-style: italic;
+font-size: 16px;
+
+}
+
+li a:hover:not(.active) {
+    background-color: #97192E;
+}
+
+.active {
+    background-color: #97192E;
+}
+
+#footer {
+    position: fixed;
+    bottom:0px;
+    height: 20px;
+    width: 100%;
+    /*border-top:2px solid #6ce6d5;*/
+   font-weight: bold;
+   }
+
+#select_1 {
+    height: 2em;
+    width: 10em;
+}
+
+#id_1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#footer {
+    position: fixed;
+    bottom:0px;
+    height: 20px;
+    width: 100%;
+    /*border-top:2px solid #6ce6d5;*/
+   font-weight: bold;
+   }
+
+/*for tables*/
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+    margin: auto;
+    
+}
+td{padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+    }
+td:hover{
+    text-decoration:underline;
+}
+
+#button1 {
+    background-color: #97192E;
+    color: white;
+    padding: 3.5px 5px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-size:18px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+
+tr:hover{background-color:  #97192E;;}
+/*
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}*/

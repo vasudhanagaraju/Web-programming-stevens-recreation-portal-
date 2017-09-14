@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> modify </title>
+<link rel="stylesheet" href="/css/style2.css" />
+</head>
+
+<body id="center1">
+  {{#each searchteam}}
+  <table id="center1">
+       
+      <tr border: 1px>
+          <h3>
+          <th colspan="2"> Match name  </th>
+          <th colspan="2"> Event name  </th>
+          <th colspan="2"> Teams  </th>
+          <th colspan="2"> Result  </th>
+          </h3>
+      </tr>
+     
+      <tr border: 1px>
+          <td colspan="2"> {{Match_name}} </td>
+          <td colspan="2"> {{Event_name}} </td>
+          <td colspan="2"> {{Teams}} </td>
+          <td colspan="2"> {{Result}} </td>
+        </tr>
+      
+  </table>
+  <br/>
+  <iframe width="420" height="315"
+src={{Video}}>
+</iframe>
+  {{/each}}
+<div id="footer">
+&copy; 2017 Web Programming Project
+</div>
+  
+   </body>		
+
+</html>

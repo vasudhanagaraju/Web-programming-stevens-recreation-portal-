@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> book </title>
+<link rel="stylesheet" href="/css/style2.css" />
+</head>
+<body>
+<div id="center1">
+	<div>
+		<h2 style=" text-align:center"> Search </h2>
+				<div>
+				<script>
+{{#if errors}}
+    {{#each errors}}
+    <div>
+        {{msg}}
+    <a href="#close"></a>
+    </div>
+    {{/each}}
+{{/if}}
+</script>
+
+		<form method="post" action="/events/searchmatch">
+		<div class="form-group" id="id_1">
+            Search by Match Name :
+            
+			<select name="match" id = "select_1">
+                {{#each search}}
+				   <option value={{Match_name}}>{{Match_name}}</option>	
+                {{/each}}	
+                </select>
+		</div>	
+	<button type="submit" class="btn btn-success" id = "button1">Search Match</button>
+			<br>
+		</form><br/><br/><br/>
+        <form method="post" action="/events/searchevent">
+		<div class="form-group" id="id_1">
+            Search by Event Name :
+                <select name="event" id = "select_1">
+                     {{#each search}}
+				   <option value={{Event_name}}>{{Event_name}}</option>
+                    {{/each}}		
+                </select>
+           
+		</div>	
+	<button type="submit" class="btn btn-success" id = "button1">Search Event</button>
+		<br>	
+		</form><br/><br/><br/>
+        <form method="post" action="/events/searchteam">
+		<div class="form-group" id="id_1">
+            Search by Team Name :
+            <select name="team" id = "select_1">
+                {{#each search}}
+			<option value={{Teams}}>{{Teams}}</option>
+            {{/each}}		
+            </select>
+		</div>	
+	<button type="submit" class="btn btn-success" id = "button1">Search Team</button>
+			
+		</form>
+	</div>
+</div> 
+<br>
+<br>				
+
+  
+ </div>	
+ <div id="footer">
+&copy; 2017 Web Programming Project
+</div>		
+</body>		
+
+</html>

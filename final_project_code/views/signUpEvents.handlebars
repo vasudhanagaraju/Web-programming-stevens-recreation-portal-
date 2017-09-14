@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> book </title>
+<link rel="stylesheet" href="/css/style2.css" />
+</head>
+
+<body>
+
+<div id= "header">
+
+	
+</div>
+<div id="center1">
+	<div>
+		<h2 style=" text-align:center"> Register for an Event </h2>
+	
+				<div id="game">
+				
+				<script>
+{{#if errors}}
+    {{#each errors}}
+    <div>
+        {{msg}}
+    <a href="#close"></a>
+    </div>
+    {{/each}}
+{{/if}}
+			</script>
+
+
+  <table>
+      <tr>
+          <h3>
+          <th colspan="2"> Date  </th>
+          <th colspan="2"> Match name  </th>
+          <th colspan="2"> Event name  </th>
+          <th colspan="2"> Team 1  </th>
+          <th colspan="2"> Team 2  </th>
+          <th colspan="2"> Venue  </th>
+          </h3>
+      </tr>
+      {{#each signUpEvents}}
+      <tr>
+          <td colspan="2"> {{Date}} </td>
+          <td colspan="2"> {{Match_name}} </td>
+          <td colspan="2"> {{Event_name}} </td>
+          <td colspan="2"> {{Team1}} </td>
+          <td colspan="2"> {{Team2}} </td>
+          <td colspan="2"> {{Venue}} </td>
+      </tr>
+      {{/each}}
+  </table>
+  
+ <br/>
+<form method="post" action="/events/signupEvents">
+<div>
+    
+    <input type="text" placeholder="Match_name" name="Match_name">
+</div>
+<div>
+    
+    <input type="text" placeholder="Event_name" name="Event_name">
+</div>
+<button type="submit">Submit</button>
+</form>
+				</div>
+	</div>
+  	<div>
+	
+	
+	</div>
+</div>
+
+
+
+<div id="footer">
+&copy; 2017 Web Programming Project
+</div>		
+</body>		
+
+</html>

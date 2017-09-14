@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> book </title>
+<link rel="stylesheet" href="/css/style2.css" />
+</head>
+
+
+
+<body>
+
+<div id="header">
+
+
+</div>
+
+<div id="center1">
+	<div>
+		<h2 style=" text-align:center"> Reservation </h2>
+	
+				<div id="game">
+				
+				<script>
+{{#if errors}}
+    {{#each errors}}
+    <div>
+        {{msg}}
+    <a href="#close"></a>
+    </div>
+    {{/each}}
+{{/if}}
+</script>
+
+		<form method="post" action="/slot/slot">
+
+		
+			
+		<div class="form-group">
+			
+			<select name="name">
+					<option value="">Select the place</option>		
+                   <option value="Base Ball">BaseBall</option>
+                   <option value="Swimming">Swimming</option>
+                   <option value="Basket Ball">BasketBall</option>
+                   <option value="Football">FootBall</option>
+                </select>
+
+		</div>	
+
+		<div class="form-group">
+			
+			<input type="date" class="form-control" name="date">
+		</div>	
+
+		<div class="form-group">
+			
+			<select name="time">
+					<option value="">Select the time</option>		
+                   <option value="Morning">9AM-12PM</option>
+                   <option value="Afternoon">12PM-3PM</option>
+                   <option value="Evening">3PM-6PM</option>
+                </select>
+
+		</div>	
+
+		<button type="submit" class="btn btn-success">Submit</button>
+			
+		</form>
+	</div>
+</div> 
+				
+ </div>
+
+
+<div id="footer">
+&copy; 2017 Web Programming Project
+</div>		
+</body>		
+
+</html>

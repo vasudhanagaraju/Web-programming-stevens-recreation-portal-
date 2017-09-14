@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> book </title>
+<link rel="stylesheet" href="/css/style2.css" />
+</head>
+
+<body>
+
+<div id= "header">
+
+	
+</div>
+
+<div id= "center1">
+	<div>
+		<h2 style=" text-align:center"> Create Event </h2>
+	
+				<div id="game">
+				
+				<script>
+{{#if errors}}
+    {{#each errors}}
+    <div>
+        {{msg}}
+    <a href="#close"></a>
+    </div>
+    {{/each}}
+{{/if}}
+			</script>
+
+<form method="post" action="/events/events">
+<div>
+    <input type="date" placeholder="Date(MM/DD/YYYY)" name="Date">
+</div>
+<div>
+    
+    <input type="text" placeholder="Match_name" name="Match_name">
+</div>
+<div>
+    
+    <input type="text" placeholder="Event_name" name="Event_name">
+</div>
+<div>
+    
+    <input type="text" placeholder="Team1" name="Team1">
+</div>
+<div>
+    
+    <input type="text" placeholder="Team2" name="Team2">
+</div>
+<div>
+    
+    <input type="text" placeholder="Venue" name="Venue">
+</div>
+<!--div>
+    <label>Creator</label>
+    <input type="text" placeholder="Creator" name="Creator">
+</div-->
+<button type="submit">Submit</button>
+</form>
+				</div>
+	</div>
+	
+	<div>
+	
+	
+	</div>
+</div>
+
+
+
+<div id="footer">
+&copy; 2017 Web Programming Project
+</div>		
+</body>		
+
+</html>

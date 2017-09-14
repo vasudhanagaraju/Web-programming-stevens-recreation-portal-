@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+			
+    <body>
+        
+       <div>
+			<div id="logo">
+			<img src="/images/title.jpg" alt="no image">
+			</div>
+
+	    <div id="web">
+         
+           <nav>
+               <ul>
+                   <div id="sss">
+                    {{#if user}}
+                  
+                   <li role="presentation">
+                       <a href="/"> Dashboard </a>
+                   </li>
+                   <li role="presentation">
+                       <a href="/events/mainevents"> Event </a>
+                   </li>
+                   <li role="presentation">
+                       <a href="/slot/slot"> Booking Slot </a>
+                   </li>
+                   <!--li role="presentation">
+                       <a href="/events/modifyevents"> Update Event </a>
+                   </li-->
+                   <li role="presentation">
+                       <a href="/slot/viewslots"> View Slot </a>
+                   </li>
+                   <li role="presentation">
+                       <a href="/events/result"> Add Result </a>
+                   </li>
+                   <li role="presentation">
+                       <a href="/events/search"> Search </a>
+                   </li>
+                    <li role="presentation">
+                       <a href="/users/logout"> Logout </a>
+                   </li>
+                   {{else}}
+                   
+                   <li role="presentation">
+                       <a href="/users/login"> Login </a>
+                   </li>
+                    <li role="presentation">
+                       <a href="/users/register"> Register </a>
+                   </li>
+                   
+                   {{/if}}
+                   </div>
+               </ul>
+           </nav>
+       </div>
+
+       <div>
+           <!-- to show up the - you are a registered user msg -->
+           
+           <div>
+          {{#if success_msg}}
+            <div>{{success_msg}}</div>
+          {{/if}}
+
+          {{#if error_msg}}
+            <div>{{error_msg}}</div>
+          {{/if}}
+
+          {{#if error}}
+            <div>{{error}}</div>
+          {{/if}}
+          
+          {{{body}}}
+        </div>
+
+       </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> dash </title>
+<link rel="stylesheet" href="/css/style1.css" />
+</head>
+
+<body>
+
+
+
+<div id= "wrapper">
+<div id="fit">
+  <img class="mySlides"  src="/images/d1.jpg"  alt="Generic placeholder thumbnail" style="width:1000px;height:500px;"/>
+  <img class="mySlides" src="/images/d2.jpg"  alt="Generic placeholder thumbnail" style="width:1000px;height:500px;" />
+  <img class="mySlides" src="/images/d3.jpg"  alt="Generic placeholder thumbnail" style="width:1000px;height:500px;"/>
+  <img class="mySlides" src="/images/d4.jpg"  alt="Generic placeholder thumbnail" style="width:1000px;height:500px;" />
+  <img class="mySlides" src="/images/d5.jpg"  alt="Generic placeholder thumbnail" style="width:1000px;height:500px;"/>
+  <img class="mySlides" src="/images/d6.jpg"  alt="Generic placeholder thumbnail" style="width:1000px;height:500px;"/>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+</div>
+
+<div id= "footer">&copy; 2017 Web Programming Project</div>
+
+</body>
+</html>

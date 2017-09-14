@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Register </title>
+<link rel="stylesheet" href="/css/style4.css" />
+</head>
+
+
+<body>
+<div id="center1">
+
+<h2> Register </h2>
+<script>
+{{#if errors}}
+    {{#each errors}}
+    <div>
+        {{msg}}
+    <a href="#close"></a>
+    </div>
+    {{/each}}
+{{/if}}
+</script>
+
+<form method="post" action="/users/register">
+<div>
+    
+    <input type="text" placeholder="Name" name="name">
+</div>
+
+<div>
+    
+    <input type="text" placeholder="Username" name="username">
+</div>
+
+<div>
+    
+    <input type="password" placeholder="Password" name="password">
+</div>
+
+<div>
+    
+    <input type="password" placeholder="Confirm Password" name="password2">
+</div>
+
+<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
+
+

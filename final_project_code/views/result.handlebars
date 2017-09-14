@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> book </title>
+<link rel="stylesheet" href="/css/style2.css" />
+</head>
+
+<body>
+
+
+<div id ="center1">
+	<div>
+		<h2 style=" text-align:center"> Result </h2>
+	
+				<div id="game">
+				
+				<script>
+{{#if errors}}
+    {{#each errors}}
+    <div>
+        {{msg}}
+    <a href="#close"></a>
+    </div>
+    {{/each}}
+{{/if}}
+			</script>
+
+<form method="post" action="/events/result">
+<div>
+    
+    <input type="text" placeholder="Match_name" name="Match_name">
+</div>
+<div>
+    
+    <input type="text" placeholder="Event_name" name="Event_name">
+</div>
+<div>
+    
+    <input type="text" placeholder="Teams" name="Teams">
+</div>
+<div>
+    
+    <input type="text" placeholder="Result" name="Result">
+</div>
+<div>
+    
+    <input type="text" placeholder="Video" name="Video">
+</div>
+
+<!--div>
+    <label>Creator</label>
+    <input type="text" placeholder="Creator" name="Creator">
+</div-->
+<button type="submit">Submit</button>
+</form>
+				</div>
+	</div>
+  
+  
+
+
+	
+	
+	
+	<div>
+	
+	
+	</div>
+</div>
+
+
+
+<div id="footer">
+&copy; 2017 Web Programming Project
+</div>		
+</body>		
+
+</html>
